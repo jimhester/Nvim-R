@@ -1,3 +1,7 @@
 file.mtime <- function(...) {
-  file.info(..., extra_cols = FALSE)$mtime
+  file.info(...)$mtime
+}
+
+file.size <- function(...) {
+  file.info(...)$size
 }
